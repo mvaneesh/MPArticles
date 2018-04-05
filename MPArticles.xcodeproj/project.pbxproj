@@ -107,8 +107,9 @@
 		52CBB2DF2074DE0F00486349 /* MPArticles */ = {
 			isa = PBXGroup;
 			children = (
-				52CBB3122074E43E00486349 /* WebServices */,
 				52CBB3002074E20000486349 /* MPArticles */,
+				9CAD6016207548D000B10F49 /* Utilities */,
+				52CBB3122074E43E00486349 /* WebServices */,
 				52CBB2E02074DE0F00486349 /* AppDelegate.swift */,
 				52CBB2E42074DE0F00486349 /* Main.storyboard */,
 				52CBB2E72074DE0F00486349 /* Assets.xcassets */,
@@ -206,6 +207,13 @@
 				7308E6456ECD390220FD4386 /* Pods_MPArticlesTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CAD6016207548D000B10F49 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		BD65A6C1D48295C57B6DB7E8 /* Pods */ = {

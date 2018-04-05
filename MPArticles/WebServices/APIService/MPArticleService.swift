@@ -10,13 +10,26 @@ import UIKit
 
 class MPArticleService: WebServiceAPI {
     
-    override func requestCompletedWithSuccess(data : Any?) -> Any? {
+    override func requestCompletedWithSuccess(responseData : Any?) -> Any? {
         
-        print(data)
+        var mpArticles: [MPArticleModel] = []
+        if let response = responseData as? [String: AnyObject] {
+            if let resultData = response["results"] as? NSDictionary{
+                //mpArticles.append(parseArticleData(dataDict: resultData),])
+                
+            }
+        }
         return nil
     }
     
-    override func requestFailed(data : NSError) -> Any?{
+    override func requestFailed(error : NSError) -> Any?{
         return nil
+    }
+    
+    private func parseArticleData(dataDict: NSDictionary) -> MPArticleModel{
+        let articleInfo = MPArticleModel()
+        
+        return articleInfo
+        
     }
 }
