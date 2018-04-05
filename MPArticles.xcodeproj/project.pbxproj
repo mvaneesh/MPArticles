@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		177844F4CB0249EBA800FBFA /* Pods_MPArticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6C95431C3F4A50E295ED2 /* Pods_MPArticles.framework */; };
+		5258CE4E2075E52C00E2F331 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258CE4D2075E52C00E2F331 /* Utility.swift */; };
+		5258CE522075F9D800E2F331 /* MPArticleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258CE512075F9D800E2F331 /* MPArticleServiceTests.swift */; };
 		52CBB2E12074DE0F00486349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB2E02074DE0F00486349 /* AppDelegate.swift */; };
 		52CBB2E62074DE0F00486349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CBB2E42074DE0F00486349 /* Main.storyboard */; };
 		52CBB2E82074DE0F00486349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CBB2E72074DE0F00486349 /* Assets.xcassets */; };
 		52CBB2EB2074DE0F00486349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CBB2E92074DE0F00486349 /* LaunchScreen.storyboard */; };
-		52CBB2F62074DE0F00486349 /* MPArticlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB2F52074DE0F00486349 /* MPArticlesTests.swift */; };
+		52CBB2F62074DE0F00486349 /* MPArticlesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB2F52074DE0F00486349 /* MPArticlesViewModelTests.swift */; };
 		52CBB3082074E26600486349 /* MPArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB3072074E26600486349 /* MPArticleViewModel.swift */; };
 		52CBB30A2074E27D00486349 /* MPArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB3092074E27D00486349 /* MPArticleModel.swift */; };
 		52CBB30E2074E2BA00486349 /* MPArticleTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB30C2074E2BA00486349 /* MPArticleTableCellTableViewCell.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		3750F325E167399344E05997 /* Pods-MPArticles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPArticles.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPArticles/Pods-MPArticles.release.xcconfig"; sourceTree = "<group>"; };
+		5258CE4D2075E52C00E2F331 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		5258CE512075F9D800E2F331 /* MPArticleServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleServiceTests.swift; sourceTree = "<group>"; };
 		52CBB2DD2074DE0F00486349 /* MPArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPArticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CBB2E02074DE0F00486349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CBB2E52074DE0F00486349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +49,7 @@
 		52CBB2EA2074DE0F00486349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52CBB2EC2074DE0F00486349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CBB2F12074DE0F00486349 /* MPArticlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPArticlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52CBB2F52074DE0F00486349 /* MPArticlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticlesTests.swift; sourceTree = "<group>"; };
+		52CBB2F52074DE0F00486349 /* MPArticlesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticlesViewModelTests.swift; sourceTree = "<group>"; };
 		52CBB2F72074DE0F00486349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CBB3072074E26600486349 /* MPArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleViewModel.swift; sourceTree = "<group>"; };
 		52CBB3092074E27D00486349 /* MPArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleModel.swift; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5258CE4C2075E50E00E2F331 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5258CE4D2075E52C00E2F331 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		52CBB2D42074DE0F00486349 = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				52CBB3002074E20000486349 /* MPArticles */,
-				9CAD6016207548D000B10F49 /* Utilities */,
 				52CBB3122074E43E00486349 /* WebServices */,
+				5258CE4C2075E50E00E2F331 /* Utility */,
 				52CBB2E02074DE0F00486349 /* AppDelegate.swift */,
 				52CBB2E42074DE0F00486349 /* Main.storyboard */,
 				52CBB2E72074DE0F00486349 /* Assets.xcassets */,
@@ -122,8 +134,9 @@
 		52CBB2F42074DE0F00486349 /* MPArticlesTests */ = {
 			isa = PBXGroup;
 			children = (
-				52CBB2F52074DE0F00486349 /* MPArticlesTests.swift */,
+				52CBB2F52074DE0F00486349 /* MPArticlesViewModelTests.swift */,
 				52CBB2F72074DE0F00486349 /* Info.plist */,
+				5258CE512075F9D800E2F331 /* MPArticleServiceTests.swift */,
 			);
 			path = MPArticlesTests;
 			sourceTree = "<group>";
@@ -207,13 +220,6 @@
 				7308E6456ECD390220FD4386 /* Pods_MPArticlesTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CAD6016207548D000B10F49 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		BD65A6C1D48295C57B6DB7E8 /* Pods */ = {
@@ -341,10 +347,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MPArticles/Pods-MPArticles-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,6 +450,7 @@
 				52CBB31A2074EC0800486349 /* WebAPIEndpoint.swift in Sources */,
 				52CBB3082074E26600486349 /* MPArticleViewModel.swift in Sources */,
 				52CBB31C2074ECE400486349 /* MPArticleType.swift in Sources */,
+				5258CE4E2075E52C00E2F331 /* Utility.swift in Sources */,
 				52CBB30E2074E2BA00486349 /* MPArticleTableCellTableViewCell.swift in Sources */,
 				52CBB30A2074E27D00486349 /* MPArticleModel.swift in Sources */,
 				52CBB31E2074EE8200486349 /* MPArticleService.swift in Sources */,
@@ -456,7 +465,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52CBB2F62074DE0F00486349 /* MPArticlesTests.swift in Sources */,
+				52CBB2F62074DE0F00486349 /* MPArticlesViewModelTests.swift in Sources */,
+				5258CE522075F9D800E2F331 /* MPArticleServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +646,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99VN9RJWNY;
 				INFOPLIST_FILE = MPArticlesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MPArticlesTests;
@@ -653,6 +664,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99VN9RJWNY;
 				INFOPLIST_FILE = MPArticlesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MPArticlesTests;

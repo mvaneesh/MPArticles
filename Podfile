@@ -5,6 +5,7 @@ target 'MPArticles' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'MBProgressHUD'
 
   target 'MPArticlesTests' do
     inherit! :search_paths

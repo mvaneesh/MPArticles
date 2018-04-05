@@ -10,15 +10,31 @@ import UIKit
 
 class MPArticleViewModel: NSObject {
     
-    func mostPopularArticles(completion: (_ data: MPArticleModel?) ->Void){
+    var popularArticles: [MPArticleModel] = []
+    
+    //call to server to get the data
+    func mostPopularArticles(completion: @escaping (_ success: Bool?) ->Void, fail: @escaping (_ fail: Error?)-> Void ){
         
         let service = MPArticleService()
         service.request(MPArticleType().endpoint(), success: { (data) in
             
+            if let articleData = data as? [MPArticleModel]{
+                self.popularArticles = articleData
+                completion(true)
+            }
+            
         }) { (error) in
-            
-            
+            fail(error)
         }
+    }
+    
+    //update UI methods
+    func numberofRows()->Int{
+        return popularArticles.count
+    }
+    
+    func articleInfoAt(index: Int)-> MPArticleModel{
+        return popularArticles[index]
     }
     
     

@@ -10,16 +10,15 @@ import UIKit
 
 class MPArticleType: NSObject {
 
+    // end point for ,ost popular api
     func endpoint() -> WebAPIEndpoint{
-        
-        print(url(path : MOSTPOPULAR_URL))
         return WebAPIEndpoint(method: .get, path: url(path: MOSTPOPULAR_URL), parameters: nil)
     }
     
+    
+    // form the url for most popular API
     private func url(path : String) -> String{
         let pathWithKey = String(format : "%@%@", path, MPARTICLE_API_KEY)
-        let completeURL = String(format: "%@%@", baseURL, pathWithKey)
-        let resultURL = completeURL.removingPercentEncoding?.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
-        return resultURL!
+        return String(format: "%@%@", baseURL, pathWithKey)
     }
 }

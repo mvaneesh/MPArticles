@@ -10,15 +10,20 @@ import UIKit
 
 class MPArticleTableCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var customView: UIView!
+    @IBOutlet weak var publishDate: UILabel!
+    @IBOutlet weak var articleBy: UILabel!
+    @IBOutlet weak var title: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func setData(articleInfo: MPArticleModel){
+        title.text = articleInfo.title
+        articleBy.text = articleInfo.byLine
+        publishDate.text = articleInfo.publishDate
     }
     
 }

@@ -13,5 +13,4 @@ struct MPArticleModel {
     var publishDate: String = ""
     var byLine: String = ""
     var detailURL: String = ""
-    var assetID: UInt64 = 0
 }
