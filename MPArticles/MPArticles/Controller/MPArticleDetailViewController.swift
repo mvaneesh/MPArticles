@@ -29,7 +29,6 @@ class MPArticleDetailViewController: UIViewController {
         webView.navigationDelegate = self
         view = webView
         self.title = ""
-        navigationController?.navigationBar.topItem?.title  = ""
 
         //initialize data
         initializeViewWithData()
