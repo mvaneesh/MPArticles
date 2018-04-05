@@ -37,5 +37,9 @@ class MPArticleViewModel: NSObject {
         return popularArticles[index]
     }
     
+    func urlForSelected(row: Int)-> String{
+        let articleInfo = popularArticles[row]
+        return articleInfo.detailURL
+    }
     
 }

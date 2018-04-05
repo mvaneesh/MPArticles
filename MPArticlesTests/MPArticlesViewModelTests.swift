@@ -70,4 +70,18 @@ class MPArticlesViewModelTests: XCTestCase {
         XCTAssertTrue(info!.title == "Test")
     }
     
+    func testURLForSelected(){
+       
+        var articles: [MPArticleModel] = []
+        var article = MPArticleModel()
+        article.detailURL = "www.google.com"
+        articles.append(article)
+        
+        viewModel?.popularArticles = articles
+        
+        let info = viewModel?.articleInfoAt(index: 0)
+        XCTAssertTrue(info != nil)
+        XCTAssertTrue(info!.detailURL == "www.google.com")
+    }
+    
 }

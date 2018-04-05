@@ -53,7 +53,10 @@ class MPArticleViewController: UIViewController {
             }
             
         }) { (error) in
+            
+            MBProgressHUD.hide(for: self.view, animated: true)
             Utility.showAlert(message: error!.localizedDescription, currentView: self)
+            
         }
     }
     
@@ -82,5 +85,10 @@ extension MPArticleViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
+        // get the url for the selected item
+        let detailURL = viewModel.urlForSelected(row: indexPath.row)
+        
+        let detailController = MPArticleDetailViewController(detailURL: detailURL)
+        navigationController?.pushViewController(detailController, animated: true)
     }
 }

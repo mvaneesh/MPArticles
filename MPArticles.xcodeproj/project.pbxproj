@@ -10,6 +10,7 @@
 		177844F4CB0249EBA800FBFA /* Pods_MPArticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6C95431C3F4A50E295ED2 /* Pods_MPArticles.framework */; };
 		5258CE4E2075E52C00E2F331 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258CE4D2075E52C00E2F331 /* Utility.swift */; };
 		5258CE522075F9D800E2F331 /* MPArticleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258CE512075F9D800E2F331 /* MPArticleServiceTests.swift */; };
+		5258CE542075FE7400E2F331 /* MPArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258CE532075FE7400E2F331 /* MPArticleDetailViewController.swift */; };
 		52CBB2E12074DE0F00486349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB2E02074DE0F00486349 /* AppDelegate.swift */; };
 		52CBB2E62074DE0F00486349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CBB2E42074DE0F00486349 /* Main.storyboard */; };
 		52CBB2E82074DE0F00486349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CBB2E72074DE0F00486349 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		3750F325E167399344E05997 /* Pods-MPArticles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPArticles.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPArticles/Pods-MPArticles.release.xcconfig"; sourceTree = "<group>"; };
 		5258CE4D2075E52C00E2F331 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		5258CE512075F9D800E2F331 /* MPArticleServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleServiceTests.swift; sourceTree = "<group>"; };
+		5258CE532075FE7400E2F331 /* MPArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleDetailViewController.swift; sourceTree = "<group>"; };
 		52CBB2DD2074DE0F00486349 /* MPArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPArticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CBB2E02074DE0F00486349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CBB2E52074DE0F00486349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				52CBB3102074E32A00486349 /* MPArticleViewController.swift */,
+				5258CE532075FE7400E2F331 /* MPArticleDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CBB31A2074EC0800486349 /* WebAPIEndpoint.swift in Sources */,
+				5258CE542075FE7400E2F331 /* MPArticleDetailViewController.swift in Sources */,
 				52CBB3082074E26600486349 /* MPArticleViewModel.swift in Sources */,
 				52CBB31C2074ECE400486349 /* MPArticleType.swift in Sources */,
 				5258CE4E2075E52C00E2F331 /* Utility.swift in Sources */,

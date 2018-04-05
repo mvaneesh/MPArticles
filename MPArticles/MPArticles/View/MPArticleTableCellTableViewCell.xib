@@ -51,7 +51,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbI-nZ-653">
-                        <rect key="frame" x="299" y="70.5" width="81" height="15"/>
+                        <rect key="frame" x="304" y="65.5" width="81" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="81" id="HnT-I4-xjI"/>
                             <constraint firstAttribute="height" constant="14.5" id="v6z-RZ-yWa"/>
@@ -65,10 +65,10 @@
                     <constraint firstItem="cB5-s6-YQt" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="1oT-f3-myS"/>
                     <constraint firstItem="cB5-s6-YQt" firstAttribute="leading" secondItem="5Yp-om-eJJ" secondAttribute="trailing" constant="20" id="8OB-rh-cYB"/>
                     <constraint firstItem="QM3-Jh-58M" firstAttribute="leading" secondItem="5Yp-om-eJJ" secondAttribute="trailing" constant="20" id="EEs-rS-pOb"/>
-                    <constraint firstAttribute="bottom" secondItem="FbI-nZ-653" secondAttribute="bottom" constant="13" id="Gq9-S2-br5"/>
+                    <constraint firstAttribute="bottom" secondItem="FbI-nZ-653" secondAttribute="bottom" constant="18" id="Gq9-S2-br5"/>
                     <constraint firstItem="5Yp-om-eJJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="VMb-yE-6vf"/>
-                    <constraint firstItem="FbI-nZ-653" firstAttribute="top" secondItem="QM3-Jh-58M" secondAttribute="bottom" constant="5" id="fe2-La-fvH"/>
-                    <constraint firstAttribute="trailing" secondItem="FbI-nZ-653" secondAttribute="trailing" constant="20" id="rLh-9h-Vif"/>
+                    <constraint firstItem="FbI-nZ-653" firstAttribute="top" secondItem="QM3-Jh-58M" secondAttribute="bottom" constant="0.5" id="fe2-La-fvH"/>
+                    <constraint firstAttribute="trailing" secondItem="FbI-nZ-653" secondAttribute="trailing" constant="15" id="rLh-9h-Vif"/>
                     <constraint firstItem="cB5-s6-YQt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="vMH-Ac-QnY"/>
                     <constraint firstItem="QM3-Jh-58M" firstAttribute="top" secondItem="cB5-s6-YQt" secondAttribute="bottom" constant="13" id="voB-Jh-lEi"/>
                     <constraint firstItem="QM3-Jh-58M" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xjf-16-dpQ"/>
