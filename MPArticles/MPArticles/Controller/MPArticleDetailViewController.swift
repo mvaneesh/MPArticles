@@ -17,6 +17,8 @@ class MPArticleDetailViewController: UIViewController {
     init(detailURL: String) {
         articleDetailURL = detailURL
         super.init(nibName: nil, bundle: nil)
+        
+        print("here")
     }
     
     required init?(coder aDecoder: NSCoder) {
